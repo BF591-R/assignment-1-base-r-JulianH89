@@ -63,8 +63,7 @@ is_between <- function(x, a, b) {
 #' rm_na(x)
 #' [1] 1 2 3
 rm_na <- function(x) {
-    vec <- na.omit(x)
-    return(vec)
+    return(x[!is.na(x)])
 }
 
 #' Calculate the median of each row of a matrix
